@@ -6,7 +6,7 @@
 
 ## Usage
 
-#### Create a timer and get duration
+##### Create a timer and get duration
 
 ```php
 $timer = new Timer();
@@ -16,7 +16,7 @@ $timer->stop();
 echo $timer->getDuration(); // 1.0234
 ```
 
-#### Accessing checkpoints
+##### Accessing checkpoints
 
 ```php
 $timer = new Timer();
@@ -32,7 +32,7 @@ $timer->getCheckpoint('stop'); // returns stop time
 $timer->getCheckpoint('foo'); // returns time of the checkpoint foo
 ```
 
-#### Measuring duration between checkpoints
+##### Measuring duration between checkpoints
 
 ```php
 $timer = new Timer();
