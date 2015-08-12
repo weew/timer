@@ -13,7 +13,7 @@ $timer = new Timer();
 $timer->start();
 sleep(1);
 $timer->stop();
-echo $timer->getDuration(); // 2.0234
+echo $timer->getDuration(); // 1.0234
 ```
 
 #### Accessing checkpoints
@@ -40,8 +40,12 @@ $timer->createCheckpoint('foo');
 sleep(1);
 $timer->createCheckpoint('bar');
 
-// returns time elapsed since checkpoint foo till 
-$timer->getDuration('foo'); now
+// returns time elapsed since checkpoint foo till now
+$timer->getDuration('foo');
 // returns duration between checkpoints foo and bar
 $timer->getDuration('foo', 'bar');
+
+$timer->stop();
+// returns time between checkpoints foo and stop
+$timer->getDuration('foo'); 
 ```

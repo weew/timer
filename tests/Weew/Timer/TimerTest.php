@@ -50,7 +50,6 @@ class TimerTest extends PHPUnit_Framework_TestCase {
         $timer->start();
         $timer->createCheckpoint('foo');
         sleep(1);
-        $timer->stop();
 
         $this->assertTrue(
             $timer->getDuration('start', 'foo') < 1
@@ -65,6 +64,13 @@ class TimerTest extends PHPUnit_Framework_TestCase {
         $this->assertTrue(
             $timer->getDuration('foo', 'stop') > 1 and
             $timer->getDuration('foo', 'stop') < 2
+        );
+
+        sleep(1);
+        $timer->stop();
+        $this->assertTrue(
+            $timer->getDuration('foo') > 2 and
+            $timer->getDuration('foo') < 3
         );
     }
 }
