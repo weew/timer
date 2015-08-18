@@ -72,5 +72,8 @@ class TimerTest extends PHPUnit_Framework_TestCase {
             $timer->getDuration('foo') > 2 and
             $timer->getDuration('foo') < 3
         );
+
+        $timer = new Timer();
+        $this->assertEquals(0, $timer->getDuration('foo', 'bar'));
     }
 }

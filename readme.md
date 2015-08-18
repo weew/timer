@@ -1,7 +1,8 @@
 # Simple timer
 
 [![Build Status](https://travis-ci.org/weew/php-timer.svg?branch=master)](https://travis-ci.org/weew/php-timer)
-[![Code Climate](https://codeclimate.com/github/weew/php-timer/badges/gpa.svg)](https://codeclimate.com/github/weew/php-timer)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/weew/php-timer/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/weew/php-timer/?branch=master)
+[![Coverage Status](https://coveralls.io/repos/weew/php-timer/badge.svg?branch=master&service=github)](https://coveralls.io/github/weew/php-timer?branch=master)
 [![License](https://poser.pugx.org/weew/php-timer/license)](https://packagist.org/packages/weew/php-timer)
 
 ## Usage
@@ -47,5 +48,5 @@ $timer->getDuration('foo', 'bar');
 
 $timer->stop();
 // returns time between checkpoints foo and stop
-$timer->getDuration('foo'); 
+$timer->getDuration('foo');
 ```
