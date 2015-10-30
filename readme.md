@@ -35,6 +35,8 @@ echo $timer->getDuration(); // 1.0234
 
 ## Checkpoints
 
+You can create custom checkpoints whenever and retrieve the elapsed time until the checkpoint was reached.
+
 ```php
 $timer = new Timer();
 $timer->start();
@@ -50,6 +52,8 @@ $timer->getCheckpoint('foo'); // returns time of the checkpoint foo
 ```
 
 ## Duration between checkpoints
+
+You can measure duration between the checkpoints.
 
 ```php
 $timer = new Timer();
