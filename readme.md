@@ -5,9 +5,25 @@
 [![Coverage Status](https://coveralls.io/repos/weew/php-timer/badge.svg?branch=master&service=github)](https://coveralls.io/github/weew/php-timer?branch=master)
 [![License](https://poser.pugx.org/weew/php-timer/license)](https://packagist.org/packages/weew/php-timer)
 
-## Usage
+## Table of contents
 
-##### Create a timer and get duration
+- [Installation](#installation)
+- [Introduction](#introduction)
+- [Basic usage](#basic-usage)
+- [Checkpoints](#checkpoints)
+- [Duration between checkpoints](#duration-between-checkpoints)
+
+## Installation
+
+`composer require weew/php-timer`
+
+## Introduction
+
+This very simple library can be used to benchmark execution times of your code, or simply whenever you need a stopwatch.
+
+## Basic usage
+
+You can retrieve duration between the timer start and stop.
 
 ```php
 $timer = new Timer();
@@ -17,7 +33,7 @@ $timer->stop();
 echo $timer->getDuration(); // 1.0234
 ```
 
-##### Accessing checkpoints
+## Checkpoints
 
 ```php
 $timer = new Timer();
@@ -33,7 +49,7 @@ $timer->getCheckpoint('stop'); // returns stop time
 $timer->getCheckpoint('foo'); // returns time of the checkpoint foo
 ```
 
-##### Measuring duration between checkpoints
+## Duration between checkpoints
 
 ```php
 $timer = new Timer();
