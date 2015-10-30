@@ -3,6 +3,9 @@
 namespace Weew\Timer;
 
 class Timer implements ITimer {
+    const START = 'start';
+    const STOP = 'stop';
+
     /**
      * @var array
      */
@@ -12,28 +15,28 @@ class Timer implements ITimer {
      * Start timer.
      */
     public function start() {
-        $this->createCheckpoint('start');
+        $this->createCheckpoint(Timer::START);
     }
 
     /**
      * Stop timer.
      */
     public function stop() {
-        $this->createCheckpoint('stop');
+        $this->createCheckpoint(Timer::STOP);
     }
 
     /**
      * @return float|null
      */
     public function getStartTime() {
-        return $this->getCheckpoint('start');
+        return $this->getCheckpoint(Timer::START);
     }
 
     /**
      * @return float|null
      */
     public function getStopTime() {
-        return $this->getCheckpoint('stop');
+        return $this->getCheckpoint(Timer::STOP);
     }
 
     /**
@@ -42,7 +45,7 @@ class Timer implements ITimer {
      *
      * @return float
      */
-    public function getDuration($from = 'start', $to = 'stop') {
+    public function getDuration($from = Timer::START, $to = Timer::STOP) {
         $from = $this->getCheckpoint($from);
         $to = $this->getCheckpoint($to);
 
