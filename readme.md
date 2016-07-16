@@ -1,11 +1,11 @@
 # Simple timer
 
-[![Build Status](https://img.shields.io/travis/weew/php-timer.svg)](https://travis-ci.org/weew/php-timer)
-[![Code Quality](https://img.shields.io/scrutinizer/g/weew/php-timer.svg)](https://scrutinizer-ci.com/g/weew/php-timer)
-[![Test Coverage](https://img.shields.io/coveralls/weew/php-timer.svg)](https://coveralls.io/github/weew/php-timer)
-[![Dependencies](https://img.shields.io/versioneye/d/php/weew:php-timer.svg)](https://versioneye.com/php/weew:php-timer)
-[![Version](https://img.shields.io/packagist/v/weew/php-timer.svg)](https://packagist.org/packages/weew/php-timer)
-[![Licence](https://img.shields.io/packagist/l/weew/php-timer.svg)](https://packagist.org/packages/weew/php-timer)
+[![Build Status](https://img.shields.io/travis/weew/timer.svg)](https://travis-ci.org/weew/timer)
+[![Code Quality](https://img.shields.io/scrutinizer/g/weew/timer.svg)](https://scrutinizer-ci.com/g/weew/timer)
+[![Test Coverage](https://img.shields.io/coveralls/weew/timer.svg)](https://coveralls.io/github/weew/timer)
+[![Dependencies](https://img.shields.io/versioneye/d/php/weew:timer.svg)](https://versioneye.com/php/weew:timer)
+[![Version](https://img.shields.io/packagist/v/weew/timer.svg)](https://packagist.org/packages/weew/timer)
+[![Licence](https://img.shields.io/packagist/l/weew/timer.svg)](https://packagist.org/packages/weew/timer)
 
 ## Table of contents
 
@@ -17,7 +17,7 @@
 
 ## Installation
 
-`composer require weew/php-timer`
+`composer require weew/timer`
 
 ## Introduction
 
